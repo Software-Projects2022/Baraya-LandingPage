@@ -2419,6 +2419,33 @@ footer {
 
 
 
+.wa-icon::after {
+    content: attr(data-city);
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--main-color);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 1;             
+    pointer-events: none;
+}
+
+.wa-icon::before {
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-right-color: var(--main-color);
+    opacity: 1;            
+}
+
 .video-box video {
     width: 100%;
     height: 100% !important;
