@@ -375,7 +375,7 @@ a {
 
 .hero .hero-description {
     color: #5a6c7d;
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 2;
     margin-bottom: 50px;
     font-weight: 400;
@@ -603,7 +603,7 @@ a {
 
 .hero .card-rating {
     bottom: 0px;
-    left: 10px;
+    right: 10px;
     border: 2px solid #f68b1e;
     animation: floatCard2 4s ease-in-out infinite;
 }
@@ -630,6 +630,7 @@ a {
     justify-content: center;
     font-size: 1.2rem;
     margin-bottom: 15px;
+    margin: 0 auto;
     box-shadow: 0 10px 30px rgba(246, 139, 30, 0.3);
     color: white;
 }
@@ -691,8 +692,8 @@ a {
     }
 
     .hero .main-image-container {
-        width: 450px;
-        height: 450px;
+        width: 350px;
+        height: 310px;
     }
 }
 
@@ -716,8 +717,8 @@ a {
     }
 
     .hero .main-image-container {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 310px;
     }
 
     .hero .floating-card {
@@ -726,10 +727,12 @@ a {
 
     .hero .card-customers {
         right: -10px;
+        top: -50px;
+        padding: 10px;
     }
 
     .hero .card-rating {
-        left: -20px;
+        right: -20px;
     }
 
     .hero .deco-orange {
@@ -869,7 +872,6 @@ a {
     font-size: 30px;
     color: var(--tow-color);
 }
-
 
 
 .service-card h3 {
@@ -1664,7 +1666,7 @@ footer {
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 911px) {
 
 
     .services .section-header h2 {
@@ -1676,7 +1678,7 @@ footer {
     }
 
     .services .services-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         gap: 25px;
     }
 
@@ -1866,6 +1868,7 @@ footer {
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
+
 
 .btn-book span {
     position: relative;
@@ -2224,21 +2227,28 @@ footer {
 
     .info-cards {
         position: relative;
-        bottom: 0;
+        bottom: 89px;
         left: 0;
         transform: none;
         margin-top: 50px;
+        grid-area: 1px;
         justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
-    .who-we-are-section {
-        padding: 0px 20px;
-    }
+    .who-we-are-section {}
 
     .value-item {
         justify-content: center;
+    }
+
+    .info-number{
+        font-size: 14px;
+    }
+
+    .section-title::after{
+        display: none;
     }
 
     .icon-wrapper {
@@ -2258,19 +2268,11 @@ footer {
         line-height: 1.8;
     }
 
-    .main_item {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
 
     .value-item {
-        padding: 35px 25px;
+        padding: 0px 0px;
     }
 
-    .info-cards {
-        flex-direction: column;
-        width: 100%;
-    }
 
     .info-card {
         width: 100%;
@@ -2287,8 +2289,8 @@ footer {
     }
 
     .value-icon {
-        width: 70px;
-        height: 70px;
+        width: 20px;
+        height: 20px;
     }
 
     .value-icon i {
@@ -2298,6 +2300,14 @@ footer {
     .value-text {
         font-size: 18px;
     }
+}
+
+@media(max-width:390px) {
+    .info-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
 }
 
 
@@ -2310,7 +2320,7 @@ footer {
 .navbar-nav .nav-link::after {
     content: "";
     position: absolute;
-    left: 55%;
+    left: 45%;
     bottom: 0;
     width: 0;
     height: 2px;
@@ -2417,6 +2427,7 @@ footer {
 }
 
 
+
 .wa-icon::after {
     content: attr(data-city);
     position: absolute;
@@ -2429,7 +2440,7 @@ footer {
     border-radius: 20px;
     font-size: 14px;
     white-space: nowrap;
-    opacity: 1;             
+    opacity: 1;
     pointer-events: none;
 }
 
@@ -2441,11 +2452,8 @@ footer {
     transform: translateY(-50%);
     border: 6px solid transparent;
     border-right-color: var(--main-color);
-    opacity: 1;            
+    opacity: 1;
 }
-
-
-
 
 .video-box video {
     width: 100%;
@@ -2481,8 +2489,6 @@ footer {
     justify-content: space-between;
     height: 100%;
 }
-
-
 
 
 .video-wrapper {
@@ -2532,6 +2538,7 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 
 .card_main_medcil .card {
     background: white;
@@ -2587,6 +2594,17 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+}
+
+@media(max-width:991px) {
+    .main_card_container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .footer-links {
+        gap: 10px;
+    }
 }
 
 .main_card_container .card {
@@ -2652,7 +2670,7 @@ footer {
 }
 
 .main_card_container .card-description {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9) !important;
     font-size: 16px;
     text-align: center;
     line-height: 1.8;
@@ -2698,10 +2716,36 @@ footer {
 }
 
 .main_card_container .card-icon svg {
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
     transition: transform 0.3s ease;
 }
 
 .main_card_container .card:hover .card-icon svg {
     transform: scale(1.1);
+}
+
+
+
+@media (max-width: 768px) {
+    .main_about {
+        flex-direction: column;
+    }
+
+    .values-container_main {
+        order: 1;
+        text-align: center;
+    }
+
+    .video-container {
+        order: 2;
+    }
+
+    .section-title::after {
+        bottom: -10px;
+        right: -45%;
+    }
+
+    .who-we-are-section {
+        padding: 0;
+    }
 }
