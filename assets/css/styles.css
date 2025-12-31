@@ -1075,12 +1075,12 @@ a {
     position: relative;
     transform: scale(0.7);
     transition: transform 0.3s ease;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
 }
 
-.modal.show .modal-content {
-    transform: scale(1);
-}
 
 .modal-close {
     position: absolute;
@@ -2748,4 +2748,16 @@ footer {
     .who-we-are-section {
         padding: 0;
     }
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background-color: white;
 }
