@@ -15,13 +15,14 @@ use App\Http\Controllers\ServiceController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/en', [HomeController::class, 'index_en'])->name('home_en');
 
-Route::get('lang/{locale}', function ($locale) {
-    if (in_array($locale, ['en', 'ar'])) {
-        session(['locale' => $locale]);
-    }
-    return redirect()->back();
-})->name('changeLang');
+// Route::get('lang/{locale}', function ($locale) {
+//     if (in_array($locale, ['en', 'ar'])) {
+//         session(['locale' => $locale]);
+//     }
+//     return redirect()->back();
+// })->name('changeLang');
 
 Route::post('service/booking', [ServiceController::class, 'store'])->name('service.booking.store');
 

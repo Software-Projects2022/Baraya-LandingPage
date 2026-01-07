@@ -44,7 +44,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#why">
-                                Why Choose Us
+                                Why Us
                             </a>
                         </li>
 
@@ -52,8 +52,8 @@
                     </ul>
                     <div class="demo-container">
                         <div class="lang-btn-4" onclick="toggleSwitch(this)">
-                            <a href="./index.html" class="lang-option ">AR</a>
-                            <a href="./index_tow.html" class="lang-option active">EN</a>
+                            <a href="{{ route('home') }}" class="lang-option ">AR</a>
+                            <a href="{{ route('home_en') }}" class="lang-option active">EN</a>
                         </div>
                     </div>
                 </div>
@@ -61,23 +61,29 @@
         </nav>
     </header>
 
-
     <main>
         <section class="hero" id="home">
             <div class="container">
                 <div class="main_hero_container">
                     <div class="hero-content">
                         <h1>
-                            Your Path To
-                            <span class="orange-text">Recovery</span> and <span class="blue-text">Independence</span>
-                            starts here
+                            Your first step
+                            <span class="orange-text">towards rehabilitation </span> and <span
+                                class="blue-text">recovery </span>
+                            starts here.
                         </h1>
 
                         <p class="hero-description">
-                            Baraya Medical is committed to providing comprehensive healthcare, including extended care,
-                            medical rehabilitation, and home healthcare.
+                            Baraya Extended Care
+                            and Medical Rehabilitation is committed.
+                            to providing exceptional and
+                            comprehensive healthcare services,
+                            including long-term care, medical
+                            rehabilitation, and home healthcare. Our
+                            medical services are carefully designed.
                             <br>
-                            Our medical services are carefully designed to meet the needs of all patients.
+                            to meet the needs of all patients and
+                            improve their quality of life.
                         </p>
 
                         <div class="cta-buttons">
@@ -99,9 +105,8 @@
                                 <div class="glow-orange"></div>
                                 <div class="image-border">
                                     <div class="image-inner">
-                                        <img src="./assets/img/main_top.jpg" alt="أخصائي علاج طبيعي"
-                                            class="doctor-image"
-                                            onerror="this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&h=600&fit=crop'">
+                                        <img src="./assets/img/Logo...jpg" alt="أخصائي علاج طبيعي" class="doctor-image">
+
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +115,7 @@
                             <div class="floating-card card-customers">
                                 <div class="card-title">
                                     <i class="fas fa-smile"></i>
-                                    <span>Happy Clients</span>
+                                    <span>Happy customers</span>
                                 </div>
                                 <div class="avatars-row">
                                     <img src="https://i.pravatar.cc/150?img=33" alt="Client" class="avatar">
@@ -124,7 +129,7 @@
                                 <div class="rating-icon">
                                     <i class="fas fa-bolt"></i>
                                 </div>
-                                <div class="rating-text">Fast<br>and Guaranteed Results</div>
+                                <div class="rating-text">Fast and guaranteed results</div>
                             </div>
                         </div>
                     </div>
@@ -139,7 +144,7 @@
                         <div class="video-wrapper">
                             <div class="image-box">
                                 <video id="myVideo" width="100%" autoplay loop playsinline>
-                                    <source src="./assets/img/vaidou (1).mp4" type="video/mp4">
+                                    <source src="./assets/img/axxs.mp4" type="video/mp4">
                                     متصفحك لا يدعم الفيديو.
                                 </video>
 
@@ -172,9 +177,10 @@
                     <div class="values-container_main">
                         <h2 class="section-title">Who We Are</h2>
                         <p class="description-text">
-                            Braya Medical Hospitals and Clinics is one of the projects and investments of TVM Capital
-                            Healthcare Partners, an investment fund known for its expertise in establishing and
-                            operating long-term care and medical rehabilitation facilities in the Arabian Gulf region.
+                            Baraya Medical Hospitals and out Patient Clinics is one of the projects and investments of
+                            TVM Capital Healthcare Partners, an investment fund known for its expertise in establishing
+                            and operating long-term care and medical rehabilitation facilities in the Arabian Gulf
+                            region.
                         </p>
                         <div class="main_item">
                             <div class="value-item">
@@ -207,8 +213,8 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Our Medical Services</h2>
-                    <p class="section-subtitle">We provide a comprehensive range of specialized medical services with
-                        the highest quality standards</p>
+                    <p class="section-subtitle">We offer a comprehensive range of specialized medical services with the
+                        highest quality standards.</p>
                 </div>
 
                 <div class="services-grid">
@@ -218,11 +224,11 @@
                         </div>
                         <div class="service-content">
                             <h3>Physical Therapy</h3>
-                            <p>Comprehensive physical therapy services to restore movement and improve quality of life.
+                            <p>Comprehensive physiotherapy services to restore mobility and improve quality of life.
                             </p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -236,7 +242,7 @@
                             <p>We help patients develop daily living skills and regain independence.</p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -246,11 +252,12 @@
                             <img src="./assets/img/main_3.png" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>Speech & Communication Therapy</h3>
-                            <p>Specialized treatment for communication and swallowing problems with proven results.</p>
+                            <h3>Speech & Language Therapy</h3>
+                            <p>Specialized treatment for communication and swallowing difficulties with proven results..
+                            </p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -261,10 +268,10 @@
                         </div>
                         <div class="service-content">
                             <h3>Elderly Care</h3>
-                            <p>Comprehensive compassionate care tailored to the special needs of the elderly.</p>
+                            <p>Comprehensive, humane care tailored to the special needs of the elderly.</p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -274,12 +281,13 @@
                             <img src="./assets/img/main_5.png" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>Chronic Condition Rehabilitation</h3>
-                            <p>Advanced therapeutic programs for chronic conditions supervised by experienced
-                                specialists.</p>
+                            <h3>Rehabilitation of chronic conditions
+                            </h3>
+                            <p>Advanced treatment programs for chronic conditions under the supervision of experienced
+                                specialists</p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -289,11 +297,12 @@
                             <img src="./assets/img/main_6.png" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>Advanced Equipment Sessions</h3>
-                            <p>The latest therapeutic technologies to achieve effective and measurable results.</p>
+                            <h3>Advanced Device Sessions</h3>
+                            <p>utilize the latest therapeutic technologies to achieve effective and measurable results
+                            </p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -303,14 +312,13 @@
                             <img src="./assets/img/main_7.png" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>Hand Injuries & Nerve Compression</h3>
-                            <p>
-                                We assess and treat injuries and conditions of the upper extremities from shoulder to
-                                hands.
-                            </p>
+                            <h3>Hand injuries and stress injuries
+                            </h3>
+                            <p>We assess and treat injuries and conditions of the upper extremities from the shoulder to
+                                the hands.</p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -321,14 +329,11 @@
                         </div>
                         <div class="service-content">
                             <h3>Women's Health</h3>
-                            <p>
-                                We provide specialized therapeutic sessions and exercises for women to treat common
-                                pelvic problems such as urinary incontinence and chronic pelvic pain.
-                            </p>
-
+                            <p>We offer specialized therapy sessions and exercises for women to treat common pelvic
+                                problems such as urinary incontinence and chronic pain.</p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -338,16 +343,12 @@
                             <img src="./assets/img/main_19.png" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>Delayed Motor & Developmental Skills in Children</h3>
-                            <p>
-                                We help you through a specialized team in treating and diagnosing developmental delays,
-                                sensory disabilities, cerebral palsy cases (hemiplegia, quadriplegia, and brachial
-                                plexus injury).
-                            </p>
-
+                            <h3>Children's Developmental and Motor Delays</h3>
+                            <p>Our specialized team helps you diagnose and treat developmental delays, sensory
+                                impairments, and cerebral palsy (hemiplegia, quadriplegia, and neuralgia).</p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -358,14 +359,11 @@
                         </div>
                         <div class="service-content">
                             <h3>Spine & Back Conditions</h3>
-                            <p>
-                                We help you prevent and treat spinal problems such as scoliosis and kyphosis and their
-                                associated postural and functional disorders.
-                            </p>
-
+                            <p>We help prevent and treat spinal problems such as scoliosis and kyphosis, and the
+                                associated postural and functional imbalances.</p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -375,15 +373,13 @@
                             <img src="./assets/img/main_13.png" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>Balance Disorders & Gait Dysfunction</h3>
-                            <p>
-                                We help you prevent and treat falls and balance disorders resulting from vestibular
-                                system disorders and tinnitus.
-                            </p>
-
+                            <h3>Balance and Walking Disorders
+                            </h3>
+                            <p>We help prevent and treat falls and imbalances resulting from vestibular disorders and
+                                tinnitus..</p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -393,16 +389,12 @@
                             <img src="./assets/img/main_14.png" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>Lymphedema Cases</h3>
-                            <p>
-                                We assess cases of swelling and fluid accumulation in organs and hands resulting from
-                                injuries and surgeries, and provide an appropriate treatment plan for lymphatic
-                                drainage.
-                            </p>
-
+                            <h3>Lymphedema</h3>
+                            <p>We assess swelling and fluid accumulation in organs and hands resulting from injuries and
+                                surgeries and provide an appropriate treatment plan for lymphatic drainage.</p>
                             <button class="btn-book">
                                 <span>Book Now</span>
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-left"></i>
                             </button>
                         </div>
                     </div>
@@ -411,53 +403,60 @@
             </div>
         </section>
 
+
         <section class="main-section" id="why">
             <div class="container">
                 <h2 class="section-title_main">Why Choose Braya</h2>
-                <p>We offer a comprehensive range of specialized medical services with the highest quality standards</p>
+                <p>We offer a comprehensive range of specialized medical services with the highest quality standards.
+                </p>
+
                 <div class="container">
                     <div class="main_card_container">
+
                         <div class="card">
-                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=800&fit=crop"
-                                alt="Physical Therapy" class="card-image">
+                            <img src="./assets/img/b.jpg" alt="Physical Therapy" class="card-image">
                             <div class="card-overlay">
                                 <div class="card-icon">
                                     <div class="gear"></div>
                                 </div>
-                                <h3 class="card-title">Physical Therapy & Rehabilitation</h3>
+                                <h3 class="card-title">Highly Experienced Specialized Medical Team</h3>
                                 <p class="card-description">
-                                    We provide comprehensive physical therapy services, including rehabilitation
-                                    programs,
-                                    sports injury treatment, and therapeutic exercise therapy. Our specialized team uses
-                                    the latest techniques to ensure fast recovery and restore full mobility.
+                                    We offer comprehensive rehabilitation services aimed at improving quality of life by
+                                    reducing pain, restoring mobility, improving strength and flexibility. Our services
+                                    include different type pf rehabilitation services for variety of cases such as
+                                    pediatrics conditions, sports injuries conditions, musculoskeletal conditions,
+                                    neurological conditions, Lymphedema conditions, and women health conditions. Our
+                                    high experienced team relies on accurate assessment and new treatment techniques to
+                                    help you confidently regain the efficiency and the quality of your
+                                    daily life.
                                 </p>
                                 <button class="card-btn btn-book">Book Now</button>
                             </div>
                         </div>
 
                         <div class="card">
-                            <img src="./assets/img/docto.jpg" alt="Therapeutic Exercises" class="card-image">
+                            <img src="./assets/img/v.jpg" alt="Rehabilitation Programs" class="card-image">
                             <div class="card-overlay">
                                 <div class="card-icon">
                                     <div class="gear"></div>
                                 </div>
-                                <h3 class="card-title">Customized Therapeutic Exercise Programs</h3>
+                                <h3 class="card-title">Trust – Care – Excellence</h3>
                                 <p class="card-description">
-                                    We design personalized therapeutic exercise programs tailored to each condition,
-                                    focusing on strengthening muscles, improving flexibility, and enhancing balance
-                                    and coordination. These programs are suitable for all ages and help prevent
-                                    future injuries.
+                                    Scientifically proven and specialized treatment programs tailored to each individual
+                                    case based on a comprehensive assessment. These programs are delivered under the
+                                    supervision of highly qualified and experienced professionals. They help accelerate
+                                    recovery, support treatment outcomes, prevent recurrence, and improve overall health
+                                    and Wellness for all ages.
                                 </p>
                                 <button class="card-btn btn-book">Book Now</button>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
-            </div>
         </section>
     </main>
-
 
     <footer>
         <div class="footer-content">
@@ -476,7 +475,7 @@
                 </a>
 
 
-                <a href="#https://www.instagram.com/baraya_care/?hl=ar" title="إنستغرام">
+                <a href="https://www.instagram.com/baraya_care/?hl=ar" title="إنستغرام">
                     <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
                         <path
                             d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
@@ -518,19 +517,32 @@
                 <h2>Book Your Appointment</h2>
                 <p>Fill in the details and we will contact you shortly</p>
             </div>
+
             <form id="bookingForm">
                 <div class="form-group">
-                    <label for="name">Name *</label>
+                    <label for="name">Full Name *</label>
                     <input type="text" id="name" required placeholder="Enter your full name">
                 </div>
+
                 <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" required placeholder="Enter your phone number">
+                    <label for="phone">Mobile Number *</label>
+                    <input type="tel" id="phone" required placeholder="Enter your mobile number">
                 </div>
+
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <select id="city" required>
+                        <option value="">Select City</option>
+                        <option value="jeddah">Jeddah</option>
+                        <option value="riyadh">Riyadh</option>
+                    </select>
+                </div>
+
                 <div class="form-group">
                     <label for="comment">Comment (Optional)</label>
                     <textarea id="comment" placeholder="Add any notes or additional details"></textarea>
                 </div>
+
                 <button type="submit" class="btn-submit">Submit Booking</button>
             </form>
         </div>
@@ -549,11 +561,11 @@
 
 
     <div class="whatsapp-floating">
-        <a href="https://wa.me/966556339036" target="_blank" class="wa-icon wa-one" data-city="الرياض">
+        <a href="https://wa.me/966556339036" target="_blank" class="wa-icon wa-one" data-city="Riyadh ">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
 
-        <a href="https://wa.me/966555970651" target="_blank" class="wa-icon wa-two" data-city="جدة">
+        <a href="https://wa.me/966555970651" target="_blank" class="wa-icon wa-two" data-city="Jeddah">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>

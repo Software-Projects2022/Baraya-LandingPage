@@ -14,5 +14,10 @@ class HomeController extends Controller
         return view('index', compact('services'));
     }
 
+    public function index_en()
+    {
+        return view('index-en');
+    }
+
 }
 

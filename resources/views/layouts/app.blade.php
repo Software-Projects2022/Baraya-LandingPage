@@ -52,8 +52,8 @@
 
                     <div class="demo-container">
                         <div class="lang-btn-4" onclick="toggleSwitch(this)">
-                            <a href="./index.html" class="lang-option active">AR</a>
-                            <a href="./index_tow.html" class="lang-option">EN</a>
+                            <a href="{{ route('home') }}" class="lang-option active">AR</a>
+                            <a href="{{ route('home_en') }}" class="lang-option">EN</a>
                         </div>
                     </div>
                 </div>
