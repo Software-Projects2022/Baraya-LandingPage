@@ -25,15 +25,15 @@ class ServiceController extends Controller
                 'comment' => $request->comment,
                 'city' => $request->city,
             ]);
+        }else{
+            $service = Service::find($request->service_id);
+            $service->bookings()->create([
+                'name' => $request->name,
+                'phone' => $request->phone,
+                'comment' => $request->comment,
+                'city' => $request->city,
+            ]);
         }
-
-        $service = Service::find($request->service_id);
-        $service->bookings()->create([
-            'name' => $request->name,
-            'phone' => $request->phone,
-            'comment' => $request->comment,
-            'city' => $request->city,
-        ]);
         return redirect()->back()->with('success', 'Booking created successfully');
     }
 
